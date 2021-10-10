@@ -144,7 +144,7 @@ const clickDebounceBtn = document.querySelector(".click-debounce-btn");
 // 連續點擊時會不斷執行
 clickBtn.addEventListener("click", handleClick);
 // 在 delay 時間內如果重複點擊會使計數器歸零，等到計時器時限內無新的點擊時才會執行
-clickDebounceBtn.addEventListener("click", debounceFunc(handleClick, 5000));
+clickDebounceBtn.addEventListener("click", debounceFunc(handleClick, 2000));
 
 function handleClick(e) {
   console.log(e.target.value);
